@@ -1,9 +1,14 @@
-class A: #define una clase de nombre A
-    matricula = None #define una variable de nombre matricula
-    nombre = None #define una variable de nombre nombre
-def _init_(self): #define una funcion de nombre init
-    print("constructor de la clase A") #imprime en pantalla el texto constructor de la clase A
+# Definición de la clase Alumnos
+class Alumnos:
+    # Método inicializador
+    def __init__(self, matricula, nombre):
+        # Asignación de la matrícula
+        self.matricula = matricula
+        # Asignación del nombre
+        self.nombre = nombre
 
-objetoA = A() #define una variable de nombre objetoA y le asigna un objeto de la clase A
+# Creación de un objeto de la clase Alumnos
+objetoAlumnos = Alumnos('matricula', 'nombre')  # Se crea un alumno con matrícula 'matricula' y nombre 'nombre'
 
-print(objetoA.nombre) #imprime en pantalla el valor de la variable nombre del objeto A
+# Impresión del nombre del objeto
+print(objetoAlumnos.nombre)  # Se imprime el nombre del alumno, que es 'nombre'
