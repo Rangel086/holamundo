@@ -77,4 +77,5 @@ class Soko:
             # Imprime el mapa
             self.imprimir_mapa()
             # Pide al usuario el movimiento
-            movimiento
+            juego = Sokoban()
+            juego.jugar()
